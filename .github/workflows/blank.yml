@@ -30,4 +30,4 @@ jobs:
       run: yarn build
     
     - name: deploy
-      run: firebase deploy
+      run: firebase deploy --token "$FIREBASE_TOKEN"
