@@ -28,8 +28,15 @@ jobs:
     # Runs a single command using the runners shell
     - name: build
       run: yarn build
-    
+      
+    - name: download firebase
+      run: curl -sL https://firebase.tools > installfirebase
+
+    - name: permissions firebase
+      run: chmod u+x installfirebase
+
+    - name: install firebase
+      run: ./installfirebase
+
     - name: deploy
-      run: |
-        curl -sL https://firebase.tools | bash
-        firebase deploy --token "$FIREBASE_TOKEN"
+      run: firebase deploy --token "$FIREBASE_TOKEN"
