@@ -22,7 +22,7 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
     
-    - name: install 
+    - name: install dependencies
       run: yarn install
 
     # Runs a single command using the runners shell
@@ -30,4 +30,6 @@ jobs:
       run: yarn build
     
     - name: deploy
-      run: firebase deploy --token "$FIREBASE_TOKEN"
+      run: |
+        curl -sL https://firebase.tools | bash
+        firebase deploy --token "$FIREBASE_TOKEN"
