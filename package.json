@@ -4,13 +4,21 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "@types/node": "^8.0.7",
-    "@types/react": "15.0.21",
-    "@types/react-dom": "0.14.23",
-    "gatsby": "^1.9.119",
-    "gatsby-link": "^1.6.28",
-    "gatsby-plugin-react-helmet": "^1.0.8",
-    "gatsby-plugin-typescript": "^1.4.10"
+    "@blueprintjs/core": "^3.26.0",
+    "@types/node": "^13.13.4",
+    "@types/randomcolor": "^0.5.4",
+    "@types/react": "^16.9.34",
+    "@types/styled-components": "^5.1.0",
+    "firebase": "^7.14.2",
+    "gatsby": "^2.21.0",
+    "gatsby-link": "^2.4.0",
+    "gatsby-plugin-firebase": "^0.2.0-beta.4",
+    "gatsby-plugin-typescript": "^2.4.0",
+    "lodash": "^4.17.15",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-wordcloud": "^1.2.2",
+    "styled-components": "^5.1.0"
   },
   "keywords": [
     "gatsby, typescript"
